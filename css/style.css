@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #111;
+  --darkmd: #222;
+  --secondary: #1c1c1c;
+  --light: #ffffff;
+  --primary: #007bff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--secondary);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--secondary);
+}
+
+.app-header {
+  height: 64px;
+  width: 100%;
+  background: var(--dark);
+  color: var(--light);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.345);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 70px;
+  width: 80%;
+  padding: 1rem;
+}
+
+.search input {
+  height: 36px;
+  width: 300px;
+  border: none;
+  outline: none;
+  background-color: var(--secondary);
+  padding: 0 14px;
+  border-radius: 20px;
+  color: var(--light);
+  font-size: 1rem;
+}
+
+.add-btn i {
+  font-size: 1.2rem;
+  padding: 10px;
+  background-color: var(--secondary);
+  border-radius: 8px;
+}
+
+.contact-list{
+    height: 85vh;
+    overflow: scroll;
+}
+
+.contact-list::-webkit-scrollbar{
+    display: none;
+}
+
+#contact-list {
+  list-style: none;
+
+}
+
+#contact-list li {
+  background-color: var(--darkmd);
+  display: flex;
+  align-items: center;
+  color: var(--light);
+  border-bottom: 1px solid gray;
+  padding: 1rem;
+}
+
+.contact-dp {
+  padding: 10px;
+  margin: 4px;
+  background-color: #007bff;
+  border-radius: 20px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  cursor: default;
+}
+
+.contact-list {
+  width: 50%;
+}
+
+.contact-info {
+  position: relative;
+  height: 85vh;
+  width: 360px;
+  flex-direction: column;
+  color: var(--light);
+  background-color: var(--darkmd);
+}
+
+.contact-info .contact-dp-name {
+  flex-direction: column;
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+.contact-info i,
+.contact-dp-name i {
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.contact-email,
+.contact-phone {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
