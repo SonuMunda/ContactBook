@@ -35,80 +35,9 @@
           <i class="fa-solid fa-plus"></i>
         </div>
       </header>
-      <div class="container">
+      <div class="container around">
         <div class="contact-list">
-          <ul id="contact-list">
-            <li class="list-item">
-              <div class="contact-dp">SM</div>
-              <div class="contact-details">
-                <h4>Sonu Munda</h4>
-                <p>987654321</p>
-              </div>
-            </li>
-            <li class="list-item">
-                <div class="contact-dp">SM</div>
-                <div class="contact-details">
-                  <h4>Sonu Munda</h4>
-                  <p>987654321</p>
-                </div>
-              </li>
-              <li class="list-item">
-                <div class="contact-dp">SM</div>
-                <div class="contact-details">
-                  <h4>Sonu Munda</h4>
-                  <p>987654321</p>
-                </div>
-              </li>
-              <li class="list-item">
-                <div class="contact-dp">SM</div>
-                <div class="contact-details">
-                  <h4>Sonu Munda</h4>
-                  <p>987654321</p>
-                </div>
-              </li>
-              <li class="list-item">
-                <div class="contact-dp">SM</div>
-                <div class="contact-details">
-                  <h4>Sonu Munda</h4>
-                  <p>987654321</p>
-                </div>
-              </li>
-              <li class="list-item">
-                <div class="contact-dp">SM</div>
-                <div class="contact-details">
-                  <h4>Sonu Munda</h4>
-                  <p>987654321</p>
-                </div>
-              </li>
-              <li class="list-item">
-                <div class="contact-dp">SM</div>
-                <div class="contact-details">
-                  <h4>Sonu Munda</h4>
-                  <p>987654321</p>
-                </div>
-              </li>
-              <li class="list-item">
-                <div class="contact-dp">SM</div>
-                <div class="contact-details">
-                  <h4>Sonu Munda</h4>
-                  <p>987654321</p>
-                </div>
-              </li>
-              <li class="list-item">
-                <div class="contact-dp">SM</div>
-                <div class="contact-details">
-                  <h4>Sonu Munda</h4>
-                  <p>987654321</p>
-                </div>
-              </li>
-            <li class="list-item">
-              <div class="contact-dp">SM</div>
-              <div class="contact-details">
-                <h4>Sonu Munda</h4>
-                <p>987654321</p>
-              </div>
-            </li>
-          </ul>
+          <ul id="contact-list"></ul>
         </div>
         <div class="contact-info">
           <div class="contact-dp-name center">
@@ -118,14 +47,72 @@
           <div class="contact-all-details">
             <div class="contact-phone">
               <i class="fa-solid fa-phone"></i>
-              <p>987654321</p>
+              <p>898998989</p>
             </div>
             <div class="contact-email">
-                <i class="fa-solid fa-envelope"></i>
-                <p>sonumunda@gmail.com</p>
+              <i class="fa-solid fa-envelope"></i>
+              <p>sonumunda@gmail.com</p>
             </div>
           </div>
         </div>
+      </div>
+      <div class="contact-form" id="contact-form">
+        <div class="form-title center" style="margin-top: 65px">
+          <h1 style="color: white; font-weight: 100">Create Contact</h1>
+        </div>
+        <form action="" id="add-contact-form">
+          <div class="form-group">
+            <i class="fa-solid fa-user"></i>
+            <div class="name">
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                class="form-control"
+                placeholder="First name"
+              />
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                class="form-control"
+                placeholder="Last name"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <i class="fa-solid fa-phone"></i>
+            <input
+              type="tel"
+              id="phone"
+              class="form-control"
+              placeholder="Phone"
+            />
+          </div>
+          <div class="form-group">
+            <i class="fa-solid fa-envelope"></i>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Email"
+            />
+          </div>
+          <div class="form-group">
+            <select
+              name="contact-label"
+              id="contact-label"
+              class="form-control"
+            >
+              <option value="">Contact Type</option>
+              <option value="Home">Home</option>
+              <option value="Office">Office</option>
+              <option value="Office">Other</option>
+            </select>
+          </div>
+          <button id="save-btn">Save</button>
+        </form>
       </div>
     </section>
     <script src="./js/script.js"></script>
