@@ -23,6 +23,9 @@ You can try out the ContactBook application by visiting the Live Demo.
    ```bash
    git clone https://github.com/SonuMunda/ContactBook.git```
 
-2. ``` cd ContactBook ```
+2. Go to Directory
+
+```bash
+   cd ContactBook 
 
 **A javascript Contact List App that stores your contacts in array and temporary basis**.
