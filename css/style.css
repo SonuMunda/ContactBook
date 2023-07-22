@@ -1,9 +1,11 @@
+/* Global CSS Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Custom CSS Variables */
 :root {
   --dark: #111;
   --darkmd: #222;
@@ -12,6 +14,7 @@
   --primary: #007bff;
 }
 
+/* Body Styles */
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--secondary);
@@ -19,6 +22,7 @@ body {
   overflow: hidden;
 }
 
+/* Utility Classes for Flexbox Layout */
 .center {
   display: flex;
   align-items: center;
@@ -31,6 +35,7 @@ body {
   justify-content: space-around;
 }
 
+/* App Wrapper Styles */
 .app-wrapper {
   display: flex;
   justify-content: center;
@@ -38,6 +43,7 @@ body {
   background-color: var(--secondary);
 }
 
+/* App Header Styles */
 .app-header {
   height: 64px;
   width: 100%;
@@ -46,10 +52,11 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.345);
 }
 
+/* Search Form Input Styles */
 .search-form input {
   height: 36px;
   width: 300px;
@@ -62,6 +69,7 @@ body {
   font-size: 1rem;
 }
 
+/* Add Button Styles */
 .add-btn i {
   font-size: 1.2rem;
   padding: 10px;
@@ -70,21 +78,25 @@ body {
   cursor: pointer;
 }
 
+/* Container Styles */
 .app-wrapper .container {
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: 30px;
+  top: 0px;
   width: 80%;
   padding: 1rem;
+  margin: 40px 0;
 }
 
+/* Contact List Styles */
 .contact-list {
   height: 90vh;
   margin: 1rem;
   overflow: scroll;
 }
 
+/* Styles for Scrollbar in Contact List */
 .contact-list::-webkit-scrollbar {
   width: 10px;
   background-color: var(--dark);
@@ -99,10 +111,10 @@ body {
   display: none;
 }
 
+/* Contact List Item Styles */
 #contact-list {
   list-style: none;
 }
-
 #contact-list li {
   background-color: var(--darkmd);
   display: flex;
@@ -112,6 +124,7 @@ body {
   padding: 1rem;
 }
 
+/* Contact Avatar Styles */
 .contact-dp {
   height: 48px;
   width: 48px;
@@ -123,6 +136,7 @@ body {
   border-radius: 40px;
 }
 
+/* Contact Details Styles */
 .contact-details {
   display: flex;
   flex-direction: column;
@@ -130,10 +144,12 @@ body {
   cursor: default;
 }
 
+/* More Contact List Styles (Override) */
 .contact-list {
   width: 100%;
 }
 
+/* Contact Info Section Styles */
 .contact-info {
   height: 90vh;
   width: 0%;
@@ -143,17 +159,20 @@ body {
   overflow: hidden;
 }
 
+/* Contact Info Section Styles - Contact Avatar and Name */
 .contact-info .contact-dp-name {
   flex-direction: column;
   margin: 1rem 1rem 2rem 1rem;
 }
 
+/* Contact Info Section Styles - Icons */
 .contact-info i,
 .contact-dp-name i {
   padding: 10px;
   margin-right: 5px;
 }
 
+/* Contact Email, Phone, and Type Styles */
 .contact-email,
 .contact-phone,
 .contact-type {
@@ -162,39 +181,43 @@ body {
   padding: 0.5rem;
 }
 
-/* Contact form */
-
+/* Contact Form Styles */
 .contact-form {
   position: relative;
   height: 100vh;
-  width: 375px;
   background-color: var(--dark);
   overflow: hidden;
 }
 
+/* Contact Form Title Styles */
 .contact-form .form-title {
   padding: 1rem;
 }
 
+/* Add Contact Form Styles */
 #add-contact-form {
   padding: 0.6rem;
 }
 
+/* Form Group Styles */
 .form-group {
   display: flex;
   align-items: center;
   margin: 1rem;
 }
 
+/* Form Icons Styles */
 .form-group i {
   color: var(--light);
   padding: 10px;
 }
 
+/* First Name and Last Name Input Styles */
 .name input {
   margin: 0.5rem 0;
 }
 
+/* Form Control and Save Button Styles */
 .form-control,
 #save-btn {
   height: 42px;
@@ -207,12 +230,14 @@ body {
   outline: none;
 }
 
+/* Save Button Styles */
 #save-btn {
   font-size: 1rem;
   border: none;
   background-color: var(--primary);
 }
 
+/* Search Contact Wrapper Styles */
 .search-contact-wrapper {
   display: flex;
   justify-content: center;
@@ -224,6 +249,7 @@ body {
   overflow: hidden;
 }
 
+/* Search Contacts Container Styles */
 .search-contacts-container {
   display: flex;
   height: 80%;
@@ -232,6 +258,7 @@ body {
   overflow: hidden;
 }
 
+/* Close Search Button Styles */
 .close-search {
   color: var(--light);
   position: absolute;
@@ -239,16 +266,16 @@ body {
   left: 20px;
 }
 
+/* Search Contacts Styles */
 .search-contacts {
   height: 100%;
   width: 100%;
   margin: 0 1rem;
-
 }
 
+/* Search Contacts List Styles */
 .search-contacts-list {
   list-style: none;
-
 }
 .search-contacts-list .list-item {
   display: flex;
@@ -258,19 +285,61 @@ body {
   padding: 1rem;
 }
 
+/* Search Contact Info Styles */
 .search-contact-info {
   color: var(--light);
   background-color: var(--darkmd);
-  width: 0;
+  overflow: hidden;
 }
 
+/* Search Contact Info Styles - Contact Avatar and Name */
 .search-contact-info .contact-dp-name {
   flex-direction: column;
   margin: 1rem 1rem 2rem 1rem;
 }
 
+/* Search Contact Info Styles - Icons */
 .search-contact-info i,
 .contact-dp-name i {
   padding: 10px;
   margin-right: 5px;
+}
+
+/* Media Queries */
+
+/* For screens with a maximum width of 1200px */
+@media screen and (max-width: 1200px) {
+  .contact-form {
+    position: fixed;
+    right: 0;
+  }
+  .app-wrapper .container {
+    width: 100%;
+  }
+}
+
+/* For screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  .contact-info {
+    position: fixed;
+    top: 65px;
+    left: 0;
+  }
+  .search-contacts-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .search-contacts {
+    height: fit-content;
+  }
+  .search-contact-info {
+    margin: 1rem;
+  }
+}
+
+/* For screens with a maximum width of 524px */
+@media screen and (max-width: 524px) {
+  .brand {
+    display: none;
+  }
 }

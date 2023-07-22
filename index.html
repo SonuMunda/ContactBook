@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/png" />
     <title>ContactBook</title>
     <!-- Style Sheet -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -24,44 +24,39 @@
   <body>
     <!-- App Wrapper -->
     <section class="app-wrapper">
+      <!-- App Header -->
       <header class="app-header around">
+        <!-- App Brand -->
         <div class="brand">
           <h1>ContactBook</h1>
         </div>
+        <!-- Search Bar -->
         <div class="search">
           <form class="search-form">
             <input type="text" placeholder="Search Contact" id="search-input" />
           </form>
         </div>
+        <!-- Add Btn -->
         <div class="add-btn">
           <i class="fa-solid fa-plus"></i>
         </div>
       </header>
+      <!-- Container Starts -->
       <div class="container around">
+        <!-- Contacts List -->
         <div class="contact-list">
           <ul id="contact-list"></ul>
         </div>
-        <div class="contact-info">
-          <div class="contact-dp-name center">
-            <div class="contact-dp">SM</div>
-            <h2>Sonu Munda</h2>
-          </div>
-          <div class="contact-all-details">
-            <div class="contact-phone">
-              <i class="fa-solid fa-phone"></i>
-              <p>898998989</p>
-            </div>
-            <div class="contact-email">
-              <i class="fa-solid fa-envelope"></i>
-              <p>sonumunda@gmail.com</p>
-            </div>
-          </div>
+        <!-- Contact Info -->
+        <div class="contact-info"></div>
         </div>
       </div>
-      <div class="contact-form" id="contact-form">
+      <!-- Contact For For Adding Contact -->
+      <div class="contact-form" id="contact-form" style="width: 0px;">
         <div class="form-title center" style="margin-top: 65px">
           <h1 style="color: white; font-weight: 100">Create Contact</h1>
         </div>
+        <!-- Form Starts -->
         <form action="" id="add-contact-form">
           <div class="form-group">
             <i class="fa-solid fa-user"></i>
@@ -116,7 +111,9 @@
           <button id="save-btn">Save</button>
         </form>
       </div>
+      <!-- Search Wrapper -->
       <div class="search-contact-wrapper">
+        <!-- close-search Btn -->
         <div class="close-search">
           <i class="fa-solid fa-arrow-left"></i>
         </div>
@@ -128,6 +125,7 @@
         </div>
       </div>
     </section>
+    <!-- Script File -->
     <script src="./js/script.js"></script>
   </body>
 </html>
